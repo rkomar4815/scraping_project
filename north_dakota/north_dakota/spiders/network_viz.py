@@ -23,10 +23,9 @@ def gen_viz(filename):
             if str(pair[0]) != 'nan' and str(pair[-1]) != 'nan':
                 key_value_tuples.append(tuple(pair))
 
-    print(key_value_tuples)
     graph = nx.from_edgelist(key_value_tuples)
 
-    nx.draw_networkx(graph, with_labels=False, node_size=25, font_size=4)
+    nx.draw_networkx(graph, with_labels=False, node_size=25)
     plt.show()
 
 

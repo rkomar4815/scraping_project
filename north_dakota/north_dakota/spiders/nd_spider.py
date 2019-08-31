@@ -15,7 +15,8 @@ class NDSearchSpider(scrapy.Spider):
         self.companies = companies
         self.company_info = company_info
 
-    '''from_crawler checks if Spider is finished scraping and runs spider_closed
+    '''
+    from_crawler checks if Spider is finished scraping and runs spider_closed
     to export scraped info to csv
     '''
 
@@ -59,7 +60,6 @@ class NDSearchSpider(scrapy.Spider):
         response = dict(zip(response.xpath('//LABEL/text()').getall(),
                             response.xpath('//VALUE/text()').getall()))
 
-        print(response)
         result.update(response)
 
         self.company_info.append(result)
