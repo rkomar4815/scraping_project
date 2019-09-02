@@ -1,6 +1,6 @@
 # scraping_project
 
-This project scrapes data from the North Dakota Secretary of State website using Scrapy and Pandas and visualizes the data using networkx and matplotlib.
+This project scrapes company registrar data from the North Dakota Secretary of State website using Scrapy and Pandas and visualizes the data using networkx and matplotlib.
 
 
 Usage Guide:
