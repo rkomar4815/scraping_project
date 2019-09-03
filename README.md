@@ -7,8 +7,8 @@ Usage Guide:
 
 1. Clone this repo to your local machine.
 
-2. Start up a virtualenvironment and pip install the requirements.txt file.
+2. Start up a virtual environment and pip install the requirements.txt file.
 
-3. CD into the scraping_project/north_dakota/north_dakota/spiders/ directory and run nd_spider.py from the commandline. This should run the scraper and save all the scraped data as a csv file.
+3. CD into the scraping_project/north_dakota/north_dakota/spiders directory and run nd_spider.py from the commandline. This should run the scraper and save all the scraped data as a csv file.
 
 4. Run network_viz.py from the commandline to generate a network graph of the data.
