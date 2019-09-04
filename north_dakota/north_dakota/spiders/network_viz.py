@@ -25,7 +25,7 @@ def gen_viz(filename):
 
     graph = nx.from_edgelist(key_value_tuples)
 
-    nx.draw_networkx(graph, with_labels=False, node_size=25)
+    nx.draw_networkx(graph, with_labels=True, node_size=25, font_size=6)
     plt.show()
 
 

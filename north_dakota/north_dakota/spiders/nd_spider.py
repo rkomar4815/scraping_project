@@ -55,6 +55,7 @@ class NDSearchSpider(scrapy.Spider):
     def company_info_parse(self, response):
 
         result = {'URLS': response.meta.get('URLS')}
+
         response.selector.remove_namespaces()
 
         response = dict(zip(response.xpath('//LABEL/text()').getall(),
@@ -74,3 +75,6 @@ if __name__ == "__main__":
     process = CrawlerProcess()
     process.crawl(NDSearchSpider)
     process.start()
+
+
+    

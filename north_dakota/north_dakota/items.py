@@ -8,7 +8,6 @@
 import scrapy
 
 
-class NorthDakotaItem(scrapy.Item):
+class company(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
